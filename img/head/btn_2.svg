@@ -1,0 +1,32 @@
+<svg width="400" height="127" viewBox="0 0 400 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dii)">
+<path d="M0 20.2896C0 15.137 3.95958 10.8222 9.08962 10.341C156.068 -3.44704 243.932 -3.44695 390.91 10.341C396.04 10.8222 400 15.137 400 20.2896V101.71C400 106.863 396.04 111.177 390.91 111.659C243.932 125.447 156.068 125.447 9.08962 111.659C3.95959 111.177 0 106.863 0 101.71V20.2896Z" fill="url(#paint0_radial)"/>
+</g>
+<defs>
+<filter id="filter0_dii" x="-6" y="0" width="406" height="134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.165208 0 0 0 0 0.325 0 0 0 0 0.267475 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3"/>
+<feGaussianBlur stdDeviation="6"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-6" dy="12"/>
+<feGaussianBlur stdDeviation="100"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.518958 0 0 0 0 0.807945 0 0 0 0 0.883333 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow" result="effect3_innerShadow"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128.5 170.5) rotate(-103.548) scale(341.503 609.924)">
+<stop stop-color="#289E89"/>
+<stop offset="0.640625" stop-color="#B83C3C"/>
+<stop offset="1" stop-color="#7EE3CB"/>
+</radialGradient>
+</defs>
+</svg>

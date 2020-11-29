@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Uni Neue;
+  font-weight: 500;
+  background-color: #1a1d22;
+  color: #fff;
+}
+button,
+a,
+textarea,
+input,
+select {
+  border: none;
+
+  outline: none;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  outline: none;
+  display: inline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: 500;
+}
+textarea {
+  resize: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 7px;
+  max-width: 1160px;
+}
+
+a {
+  transition: 0.4s;
+  color: rgb(255, 255, 255);
+  &:hover {
+    // opacity: 0.8;
+    color: $blue;
+    transition: 0.4s;
+  }
+}
