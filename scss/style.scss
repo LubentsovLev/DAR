@@ -8,14 +8,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transform-style: preserve-3d;
 }
 .head-img-hand {
   background-image: url(../img/head/hand.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1415px;
-  transform-style: preserve-3d;
 }
 .header {
   padding-top: 50px;
@@ -273,7 +271,7 @@
   &__right {
     margin-left: -40px;
     img {
-      max-width: 103%;
+      max-width: 100%;
     }
   }
 }
@@ -734,5 +732,10 @@
     }
   }
 }
-
+.header__menu-button{
+    display: none;
+}
+.header-mob {
+  display: none;
+}
 @import "media";
