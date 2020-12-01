@@ -584,7 +584,11 @@
     flex-direction: column;
     min-width: 540px;
     min-height: 520px;
-    input {
+    select {
+      cursor: pointer;
+    }
+    input,
+    select {
       padding: 22px 30px;
       background-color: transparent;
       min-height: 70px;
@@ -600,7 +604,7 @@
       &::-webkit-input-placeholder {
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 26px;
         font-family: Uni Neue;
         font-style: normal;
@@ -610,13 +614,19 @@
       &:-moz-placeholder {
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 26px;
         font-family: Uni Neue;
         font-style: normal;
         font-weight: bold;
         color: #fff;
       }
+    }
+    option {
+      background-color: $black;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
     }
     button {
       padding: 34px 10px;
@@ -691,6 +701,10 @@
       background-color: transparent;
       margin-right: 15px;
       padding: 24px;
+      &:hover {
+        background-color: $blue;
+        border: 2px solid $blue;
+      }
       &-img {
         width: 26px;
         height: 26px;
@@ -699,12 +713,30 @@
         background-position: center;
         background-size: contain;
       }
+      //   &:nth-of-type(1) {
+      //     &:hover {
+      //       background-color: $blue;
+      //       border: 2px solid $blue;
+      //       .footer__social-link-img {
+      //         background-image: url(../img/footer/facebook_bl.svg) !important;
+      //       }
+      //     }
+      //   }
+      //   &:nth-of-type(2) {
+      //     &:hover {
+      //       background-color: $blue;
+      //       border: 2px solid $blue;
+      //       .footer__social-link-img {
+      //         background-image: url(../img/footer/twitter_bl.svg) !important;
+      //       }
+      //     }
+      //   }
       &:nth-of-type(1) {
         &:hover {
           background-color: $blue;
           border: 2px solid $blue;
           .footer__social-link-img {
-            background-image: url(../img/footer/facebook_bl.svg) !important;
+            background-image: url(../img/footer/instagram_bl.svg) !important;
           }
         }
       }
@@ -713,16 +745,16 @@
           background-color: $blue;
           border: 2px solid $blue;
           .footer__social-link-img {
-            background-image: url(../img/footer/twitter_bl.svg) !important;
+            background-image: url(../img/footer/youtube_bl.svg) !important;
           }
         }
       }
-      &:nth-of-type(3) {
+      &:nth-of-type(5) {
         &:hover {
           background-color: $blue;
           border: 2px solid $blue;
           .footer__social-link-img {
-            background-image: url(../img/footer/instagram_bl.svg) !important;
+            background-image: url(../img/footer/vk_bl.svg) !important;
           }
         }
       }

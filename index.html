@@ -36,17 +36,17 @@
               </a>
               <nav class="header__menu">
                 <div class="header__menu header__menu-container">
-                  <a href="#">Ликвидность DAR</a>
-                  <a href="#">Валидатор</a>
-                  <a href="#">Для чего нужен?</a>
-                  <a href="#">Как использовать?</a>
-                  <a href="#" class="header__menu-button button"
+                  <a href="#liquidity">Ликвидность DAR</a>
+                  <a href="#validator">Валидатор</a>
+                  <a href="#needing">Для чего нужен?</a>
+                  <a href="#how_to_use">Как использовать?</a>
+                  <a href="#join" class="header__menu-button button"
                     >Присоединиться</a
                   >
                 </div>
               </nav>
             </div>
-            <a href="#" class="header__button-desc header__button button"
+            <a href="#join" class="header__button-desc header__button button"
               >Присоединиться</a
             >
           </div>
@@ -62,7 +62,7 @@
                 Получай вознаграждение специальной монетй DAR за активное
                 участие в жизни нашего проекта.
               </div>
-              <a href="#" class="head__left-btn">
+              <a href="#join" class="head__left-btn">
                 <div class="head__left-btn-shadow"></div>
                 <p>
                   <span><img src="./img/head/finger.svg" alt="" /></span>
@@ -80,7 +80,7 @@
             </div>
           </div>
         </section>
-        <section class="why">
+        <section id="liquidity" class="why">
           <div class="why__bub bub why__bub-1">
             <img src="img/why/bub_1.png" alt="" />
           </div>
@@ -111,7 +111,7 @@
         </section>
       </div>
     </div>
-    <section class="price">
+    <section id="validator" class="price">
       <div class="price__container container">
         <div class="price__left">
           <div class="price__upperText text">
@@ -184,7 +184,7 @@
         </div>
       </div>
     </section>
-    <section class="what">
+    <section id="needing" class="what">
       <div class="what__bub bub what__bub-1">
         <img src="img/act/bub_1.png" alt="" />
       </div>
@@ -223,13 +223,17 @@
           </div>
           <div class="what__more">
             <p class="what__more-text">Узнай о токене в нашей википедии</p>
-            <a href="#" class="what__more-btn">Открыть википедию</a>
+            <a
+              href="https://develop.wiki.decimalchain.com/doku.php?id=instructions:chto_decimalchain"
+              class="what__more-btn"
+              >Открыть википедию</a
+            >
           </div>
         </div>
       </div>
     </section>
     <div class="how__bg">
-      <section class="how">
+      <section id="how_to_use" class="how">
         <div class="how__container container">
           <h1 class="how__title title">Как это работает?</h1>
           <p class="how__uderTitle">
@@ -273,7 +277,7 @@
           </div>
         </div>
       </section>
-      <section class="join">
+      <section id="join" class="join">
         <div class="join__container container">
           <div class="join__left">
             <h1 class="join__title title">
@@ -293,45 +297,109 @@
               </p>
             </div>
           </div>
-          <div class="join__form">
-            <input placeholder="ИМЯ и Фамилия" type="text" />
-            <input placeholder="Номер телефона" type="text" />
-            <input placeholder="EMAIL" type="text" />
+          <form class="join__form">
+            <input type="hidden" name="project_name" value="DAR" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="levchill2017l@gmail.com"
+            />
+            <input type="hidden" name="form_subject" value="footer form" />
+            <input name="Ваше Имя" placeholder="Ваше Имя" type="text" />
+            <input
+              name="Номер кошелька DecimalChain"
+              placeholder="Номер кошелька DecimalChain"
+              type="text"
+            />
+            <input
+              name="Ваш аккаунт в Телеграмме"
+              placeholder="Ваш аккаунт в Телеграмме"
+              type="text"
+            />
+            <input
+              name="Ссылки на ваши ВК, Инстаграмм, Ютуб, и др."
+              placeholder="Ссылки на ваши ВК, Инстаграмм, Ютуб, и др."
+              type="text"
+            />
+            <select name="Ваша идея по продвижению DecimalChain">
+              <option value="nothing">
+                Ваша идея по продвижению DecimalChain
+              </option>
+              <option value="option one">option one</option>
+              <option value="option two">option two</option>
+            </select>
             <button>Присоедениться</button>
-          </div>
+          </form>
         </div>
       </section>
     </div>
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__logo">
-          <img src="img/header/LOGO.png" alt="" />
+          <a href="#"><img src="img/header/LOGO.png" alt="" /></a>
           <p>Все права защищены © DecimalChain 2020</p>
         </div>
         <div class="footer__links">
-          <a href="#">DAR</a>
-          <a href="#">DECIMAL CHAIN</a>
-          <a href="#">WHALESBURG</a>
+          <a href="https://decimalchain.com/">DecimalChain</a>
         </div>
         <div class="footer__social">
-          <a href="#" class="footer__social-link">
-            <!-- <img src="./img/footer/facebook.svg" alt="" /> -->
+          <!-- <a href="#" class="footer__social-link">
             <div
               style="background-image: url(img/footer/facebook.svg)"
               class="footer__social-link-img"
             ></div
           ></a>
           <a href="#" class="footer__social-link">
-            <!-- <img src="img/footer/twitter.svg" alt="" /> -->
             <div
               style="background-image: url(img/footer/twitter.svg)"
               class="footer__social-link-img"
             ></div
-          ></a>
-          <a href="#" class="footer__social-link">
-            <!-- <img src="img/footer/instagram.svg" alt=""/> -->
+          ></a> -->
+          <a
+            href="https://www.instagram.com/decimal_ru/?igshid=o0e11mh8yqqz"
+            class="footer__social-link"
+          >
             <div
               style="background-image: url(img/footer/instagram.svg)"
+              class="footer__social-link-img"
+            ></div>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCmqN8s4kGiK_6MegmD6S-AQ"
+            class="footer__social-link"
+          >
+            <div
+              style="background-image: url(img/footer/youtube.svg)"
+              class="footer__social-link-img"
+            ></div>
+          </a>
+          <a
+            title="telegram rus"
+            href="https://t.me/decimalchain_ru"
+            class="footer__social-link"
+          >
+            <div
+              style="background-image: url(img/footer/tel_rus.jpg)"
+              class="footer__social-link-img"
+            ></div>
+          </a>
+          <a
+            title="telegram news"
+            href="https://t.me/decimal_ru"
+            class="footer__social-link"
+          >
+            <div
+              style="background-image: url(img/footer/tel_news.jpg)"
+              class="footer__social-link-img"
+            ></div>
+          </a>
+
+          <a
+            href="https://vk.com/decimal_community"
+            class="footer__social-link"
+          >
+            <div
+              style="background-image: url(img/footer/vk.svg)"
               class="footer__social-link-img"
             ></div>
           </a>
