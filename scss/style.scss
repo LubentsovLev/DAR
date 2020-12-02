@@ -1,7 +1,7 @@
-@import "vars";
-@import "libs";
-@import "fonts";
-@import "global";
+@import 'vars';
+@import 'libs';
+@import 'fonts';
+@import 'global';
 
 .head-img {
   background-image: url(../img/head/full_bg.png);
@@ -12,8 +12,9 @@
 .head-img-hand {
   background-image: url(../img/head/hand.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1415px;
+  background-position: center top 10%;
+  // background-size: 1415px;
+  background-size: 100% auto;
 }
 .header {
   padding-top: 50px;
@@ -443,7 +444,7 @@
   position: relative;
   overflow: hidden;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     right: -127px;
     top: -41px;
@@ -587,8 +588,10 @@
     select {
       cursor: pointer;
     }
+
     input,
-    select {
+    select,
+    textarea {
       padding: 22px 30px;
       background-color: transparent;
       min-height: 70px;
@@ -597,6 +600,7 @@
       box-sizing: border-box;
       border-radius: 10px;
       margin-bottom: 20px;
+      max-height: 150px;
       color: #fff;
       &:nth-last-child(1) {
         margin-bottom: 30px;
@@ -619,6 +623,15 @@
         font-family: Uni Neue;
         font-style: normal;
         font-weight: bold;
+        color: #fff;
+      }
+    }
+    textarea {
+      min-height: 100px;
+      &::-webkit-input-placeholder {
+        color: #fff;
+      }
+      &:-moz-placeholder {
         color: #fff;
       }
     }
@@ -778,4 +791,4 @@
   color: #fff;
 }
 
-@import "media";
+@import 'media';
